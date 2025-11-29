@@ -1,0 +1,112 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --accent:#06b6d4;
+  --muted:#94a3b8;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background: var(--bg);
+  color: #fff;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  padding: 40px;
+}
+
+.wrap {
+  width: 600px;
+  max-width: 100%;
+}
+
+h1 {
+  margin: 0;
+}
+
+.card {
+  background: var(--card);
+  padding: 20px;
+  border-radius: 12px;
+  margin-top: 15px;
+}
+
+.add-row {
+  display: flex;
+  gap: 10px;
+}
+
+.add-row input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+}
+
+.add-row button {
+  background: var(--accent);
+  border: none;
+  padding: 12px 18px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.filters {
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.filters button {
+  background: transparent;
+  border: 1px solid var(--muted);
+  padding: 6px 12px;
+  border-radius: 8px;
+  color: var(--muted);
+  cursor: pointer;
+}
+
+.filters button.active {
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.list {
+  margin-top: 20px;
+  padding: 0;
+  list-style: none;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  background: #141a2b;
+  padding: 12px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.item .text.completed {
+  text-decoration: line-through;
+  opacity: 0.6;
+}
+
+.item .content {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.actions button {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--muted);
+}
+
+.empty {
+  text-align: center;
+  margin-top: 20px;
+  color: var(--muted);
+}
